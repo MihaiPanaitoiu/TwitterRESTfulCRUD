@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Specific details about the tweet:</h1>
+    <h3>
+        tweet id: <%= specificTweet.id %>
+    </h3>
+    <h3>
+        tweet creator: <%= specificTweet.user %>
+    </h3>
+    <h3>
+        tweet body: <%= specificTweet.tweet %>
+    </h3>
+    <br>
+    <a href="/tweets">Back to twitter Feed</a>
+    <a href="/tweets/<%=specificTweet.id%>/edit">EDIT</a>
+    <form method="POST" action="/tweets/<%=specificTweet.id%>?_method=DELETE">
+        <button>DELETE</button>
+    </form>
+</body>
+
+</html>

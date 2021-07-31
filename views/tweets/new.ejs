@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HELLO FROM THE NEW FORM</h1>
+    <h2>Make a new comment</h2>
+
+    <!-- Creating form, which sends a post request to /tweets -->
+    <form action="/tweets" method="POST">
+        <section>
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user">
+        </section>
+        <section>
+            <label for="tweet">Tweet Text</label>
+            <br>
+            <textarea name="tweet" id="tweet" cols="30" rows="5"></textarea>
+        </section>
+        <button>Submit</button>
+    </form>
+    <a href="/tweets">Back to feed</a>
+</body>
+
+</html>
